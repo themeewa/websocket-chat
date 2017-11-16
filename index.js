@@ -14,7 +14,6 @@ server.listen(port, function () {
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname+'/public'))
 
-<<<<<<< HEAD
 app.get('/socket', function(req,res){
 	res.sendFile(__dirname+'/public/webc.html');
 });
@@ -28,7 +27,6 @@ app.get('/', function(req,res){
 
 app.get('/rtc', function(req,res){
 	res.sendFile('./public/rtc.html');
->>>>>>> dbdd51820dc15a5b321168084f42fed860a6821f
 });
 
 
