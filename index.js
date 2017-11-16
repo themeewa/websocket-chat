@@ -20,7 +20,7 @@ app.get('/socket', function(req,res){
 
 app.get('/rtc', function(req,res){
 	res.sendFile(__dirname+'/public/rtc.html');
-=======
+});
 app.get('/', function(req,res){
 	res.sendFile('./public/webc.html');
 });
