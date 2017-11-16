@@ -14,12 +14,12 @@ server.listen(port, function () {
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname+'/public'))
 
-app.get('/', function(req,res){
-	res.sendFile('/public/webc.html');
+app.get('/socket', function(req,res){
+	res.sendFile(__dirname+'/public/webc.html');
 });
 
 app.get('/rtc', function(req,res){
-	res.sendFile('/public/rtc.html');
+	res.sendFile(__dirname+'/public/rtc.html');
 });
 
 
