@@ -15,11 +15,11 @@ server.listen(port, function () {
 app.use(express.static(__dirname+'/public'))
 
 app.get('/', function(req,res){
-	res.sendFile('/public/webc.html');
+	res.sendFile('./public/webc.html');
 });
 
 app.get('/rtc', function(req,res){
-	res.sendFile('/public/rtc.html');
+	res.sendFile('./public/rtc.html');
 });
 
 
