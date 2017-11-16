@@ -1,0 +1,33 @@
+                       instructions to open web sockets
+                           and web rtc file
+
+                  
+                              web sockets
+
+1) i created chatting with others those who are connected to the same server
+      ie,is local host 
+
+2)at a time man clients can the web page and start chatting with others
+
+3)in this web whom with are chating the name is displayed on the page
+
+4)but while this process  client socket and server socket is communicates
+ 
+5)for example at client side socket is created if it has only one client,if more than one clients then many sockets will be created
+the srver can identify it by the port number.
+
+6)for every client socket and port number is uniquily identified by the server..
+
+7)at a time many client sends a request to the sane server..
+
+8)after chatting we can exit it..
+
+9)the path is http://localhost:3000
+          
+                         web rtc(Real time communication)
+
+1)creating same video on the same server
+
+2)web rtc we can view our video at a time many clients can view it..on the same server)
+   
+3)the path is http://localhost:3000/rtc      
