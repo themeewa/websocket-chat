@@ -4,7 +4,7 @@ var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
@@ -14,12 +14,21 @@ server.listen(port, function () {
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname+'/public'))
 
+<<<<<<< HEAD
 app.get('/socket', function(req,res){
 	res.sendFile(__dirname+'/public/webc.html');
 });
 
 app.get('/rtc', function(req,res){
 	res.sendFile(__dirname+'/public/rtc.html');
+=======
+app.get('/', function(req,res){
+	res.sendFile('./public/webc.html');
+});
+
+app.get('/rtc', function(req,res){
+	res.sendFile('./public/rtc.html');
+>>>>>>> dbdd51820dc15a5b321168084f42fed860a6821f
 });
 
 
